@@ -1,6 +1,6 @@
 name: "Write Version to File"
 author: "teelur"
-description: "A GitHub Action that fetches the latest release tag within a repo and writes this to a file. A reupload of the action originally created by Brett Dorrans."
+description: "A GitHub Action that fetches the latest release tag and writes this to a file. Originally created by Brett Dorrans."
 inputs:
   filename:
     description: "The filename to write the version tag to"
