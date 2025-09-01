@@ -1,16 +1,16 @@
-name: 'Write Version to File'
-author: 'Brett Dorrans'
-description: 'A GitHub Action that fetches the latest release tag within a repo and writes this to a file'
+name: "Write Version to File"
+author: "teelur"
+description: "A GitHub Action that fetches the latest release tag within a repo and writes this to a file. A reupload of the action originally created by Brett Dorrans."
 inputs:
   filename:
-    description: 'The filename to write the version tag to'
+    description: "The filename to write the version tag to"
     required: true
-    default: '/.VERSION'
+    default: "/.VERSION"
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
   args:
     - ${{ inputs.filename }}
 branding:
-  icon: 'hash'
-  color: 'orange'
+  icon: "hash"
+  color: "orange"
